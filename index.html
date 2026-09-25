@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuizMaster CRT — Degree Placement Practice</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="app">
+<header><div><h1>QuizMaster CRT</h1><p>Degree Student Placement & Competitive Test Practice</p></div>
+<button id="themeBtn">🌙</button></header>
+<section class="hero"><h2>Practice smarter. Prepare for placements.</h2><p>Mix subjects, difficulty levels and company-style practice questions in one quiz.</p></section>
+<section class="controls">
+<label>Subject<select id="subject"><option>All Subjects</option><option>English</option><option>General Knowledge</option><option>Programming Languages</option><option>CRT Aptitude</option><option>Logical Reasoning</option><option>Quantitative Aptitude</option><option>Data Interpretation</option><option>Verbal Ability</option><option>Computer Fundamentals</option><option>DBMS</option><option>Operating Systems</option><option>Web Technologies</option><option>Cybersecurity</option></select></label>
+<label>Difficulty<select id="difficulty"><option>All Levels</option><option>Easy</option><option>Medium</option><option>Hard</option></select></label>
+<label>Company<select id="company"><option>All Companies</option><option>TCS</option><option>Infosys</option><option>Wipro</option><option>Accenture</option><option>Cognizant</option><option>Capgemini</option><option>HCLTech</option><option>Tech Mahindra</option><option>LTIMindtree</option><option>Mphasis</option><option>Persistent Systems</option><option>Hexaware</option><option>Coforge</option><option>Birlasoft</option><option>DXC Technology</option><option>IBM</option><option>Oracle</option><option>SAP</option><option>Microsoft</option><option>Google</option><option>Amazon</option><option>Cisco</option><option>Deloitte</option><option>EY</option><option>PwC</option><option>KPMG</option><option>Genpact</option><option>CGI</option><option>Virtusa</option><option>NTT DATA</option><option>UST</option><option>L&T Technology Services</option><option>KPIT</option><option>Zensar</option><option>Sonata Software</option><option>Zoho</option><option>Freshworks</option><option>Thoughtworks</option><option>Publicis Sapient</option><option>Nagarro</option><option>EPAM</option><option>Qualcomm</option><option>Intel</option><option>NVIDIA</option><option>Adobe</option><option>Salesforce</option><option>Apple</option><option>Meta</option><option>Samsung</option><option>PayPal</option><option>Uber</option><option>Walmart Global Tech</option><option>Flipkart</option><option>PhonePe</option><option>Razorpay</option><option>Swiggy</option><option>Zomato</option><option>Meesho</option></select></label>
+<label>Questions<select id="count"><option>10</option><option>25</option><option>50</option><option>100</option><option>200</option></select></label>
+<button id="start">Start Quiz →</button>
+</section>
+<div id="stats" class="stats"></div>
+<main id="quiz" class="quiz hidden">
+<div class="top"><span id="progress"></span><span id="timer"></span></div>
+<div class="bar"><div id="bar"></div></div>
+<div class="tags"><span id="qSubject"></span><span id="qDiff"></span><span id="qCompany"></span></div>
+<h2 id="question"></h2><div id="options"></div>
+<div class="actions"><button id="next">Next →</button></div><div id="feedback"></div>
+</main>
+<section id="result" class="result hidden"></section>
+</div><script src="questions.js"></script><script src="app.js"></script></body></html>
